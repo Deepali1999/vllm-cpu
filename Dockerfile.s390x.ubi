@@ -228,7 +228,7 @@ WORKDIR /tmp
 ENV CARGO_HOME=/root/.cargo
 ENV RUSTUP_HOME=/root/.rustup
 ENV PATH="$CARGO_HOME/bin:$RUSTUP_HOME/bin:$PATH"
-ARG OUTLINES_CORE_VERSION=0.2.10
+ARG OUTLINES_CORE_VERSION=0.2.14
 RUN --mount=type=cache,target=/root/.cache/uv \
     --mount=type=bind,from=rust,source=/root/.cargo,target=/root/.cargo,rw \
     --mount=type=bind,from=rust,source=/root/.rustup,target=/root/.rustup,rw \
